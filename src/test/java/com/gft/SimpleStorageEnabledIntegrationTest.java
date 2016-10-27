@@ -1,5 +1,6 @@
 package com.gft;
 
+import com.gft.model.Person;
 import com.tangosol.net.CacheFactory;
 import com.tangosol.net.NamedCache;
 import org.junit.AfterClass;
@@ -30,9 +31,17 @@ public final class SimpleStorageEnabledIntegrationTest {
 
     @Test
     public void simpleExample() {
-        final NamedCache cache = CacheFactory.getCache("test");
-        cache.put("key", "Hello World");
+        final NamedCache cache = CacheFactory.getCache("Person");
+        Person person = new Person();
+        person.setName("Bartek");
+        person.setLastName("Maciag");
+        person.setAge(32);
 
+        cache.put("person1", person);
         assertEquals(1, cache.size());
+        Person person1 = (Person)cache.get("person1");
+        assertEquals("Bartek", person1.getName());
+        assertEquals("Maciag", person1.getLastName());
+        assertEquals(32, person1.getAge().intValue());
     }
 }
