@@ -12,5 +12,9 @@
             <type-id>10001</type-id>
             <class-name>com.gft.model.Person</class-name>
         </user-type>
+        <user-type>
+            <type-id>10002</type-id>
+            <class-name>com.gft.model.PersonProcessor</class-name>
+        </user-type>
     </user-type-list>
 </pof-config>

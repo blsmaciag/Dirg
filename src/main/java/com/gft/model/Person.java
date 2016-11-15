@@ -1,28 +1,18 @@
 package com.gft.model;
 
-import com.tangosol.io.pof.PofReader;
-import com.tangosol.io.pof.PofWriter;
-import com.tangosol.io.pof.PortableObject;
+import com.tangosol.io.pof.annotation.Portable;
+import com.tangosol.io.pof.annotation.PortableProperty;
 
-import java.io.IOException;
+@Portable
+public class Person {
 
-public class Person implements PortableObject {
-
+    @PortableProperty(0)
     private String name;
+    @PortableProperty(1)
     private String lastName;
+
+    @PortableProperty(2)
     private Integer age;
-
-    public void readExternal(PofReader pofReader) throws IOException {
-        name = pofReader.readString(0);
-        lastName = pofReader.readString(1);
-        age = pofReader.readInt(2);
-    }
-
-    public void writeExternal(PofWriter pofWriter) throws IOException {
-        pofWriter.writeString(0, name);
-        pofWriter.writeString(1, lastName);
-        pofWriter.writeInt(2, age);
-    }
 
     public String getName() {
         return name;
@@ -50,6 +40,6 @@ public class Person implements PortableObject {
 
     @Override
     public String toString() {
-        return name+" "+lastName+" "+age;
+        return name + " " + lastName + " " + age;
     }
 }
