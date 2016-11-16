@@ -2,9 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.gft</groupId>
   <artifactId>Dirg</artifactId>
-  <version>6.0-Dirg2-REBASE</version>
+  <version>6.1-Dirg2-REBASE</version>
   <packaging>gar</packaging>
-
   <properties>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
     <junit.version>4.12</junit.version>
