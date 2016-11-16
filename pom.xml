@@ -7,7 +7,6 @@
   <properties>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
     <junit.version>4.12</junit.version>
-    <dupa.dupa.version>1.0.1</dupa.dupa.version>
   </properties>
 
   <dependencies>
@@ -21,12 +20,6 @@
       <groupId>org.littlegrid</groupId>
       <artifactId>littlegrid</artifactId>
       <version>2.15.2</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.littlegrid</groupId>
-      <artifactId>littlegrid</artifactId>
-      <version>2.15.1</version>
       <scope>test</scope>
     </dependency>
     <dependency>
