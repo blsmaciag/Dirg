@@ -2,7 +2,7 @@
   <modelVersion>4.6.0</modelVersion>
   <groupId>com.gft</groupId>
   <artifactId>Dirg</artifactId>
-  <version>7.0-Dirg2-CHERRY</version>
+  <version>7.1-Dirg2-CHERRY</version>
   <packaging>gar</packaging>
   <properties>
     <maven-surefire-plugin.version>2.19.1</maven-surefire-plugin.version>
